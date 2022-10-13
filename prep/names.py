@@ -4,22 +4,22 @@ def split(name):
     """Take a name string and split in first and last name."""
     print(">> I'm in the split function now.")
     # Do the split
-    first_last = name.split(" ")
+    splitted = name.split(" ")
     # Output the result
-    print(first_last)
+    return splitted
 
 
 def capitalize(names):
     """Take first and last name and capitalize them."""
     print(">> I'm in capitalize")
     # Capitalize the two names
-    # TO DO
+    # print(names)
     # Output the result
-    print(first_cap, last_cap)
+    return [names[0].capitalize(), names[1].capitalize()]
 
 
 if __name__ == "__main__":
     print('>> I\'m in the "if __name__" thing')
-    artist = "John Lennon"
-    split(artist)
-    # capitalize(artist)
+    artist = "john lennon"
+    first_last = split(artist)
+    print(capitalize(first_last))
