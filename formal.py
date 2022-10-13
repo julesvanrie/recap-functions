@@ -5,5 +5,5 @@ from prep import names
 
 artist = "Yoko Ono"
 splitted = names.split(artist)
-last_name = splitted[1]
+last_name = splitted['last']
 print(f"Good morning, Ms {last_name}")

@@ -6,7 +6,10 @@ def split(name):
     # Do the split
     splitted = name.split(" ")
     # Output the result
-    return splitted
+    return {
+        'first': splitted[0],
+        'last': splitted[1]
+    }
 
 
 def capitalize(names):
@@ -22,4 +25,5 @@ if __name__ == "__main__":
     print('>> I\'m in the "if __name__" thing')
     artist = "john lennon"
     first_last = split(artist)
-    print(capitalize(first_last))
+    print(first_last)
+    # print(capitalize(first_last))
